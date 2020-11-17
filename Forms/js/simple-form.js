@@ -6,7 +6,6 @@
         output.textContent = salary.value;
     });
 }
-
 {
     const name = document.querySelector('#name');
     const NameError = document.querySelector('.name-error');
@@ -16,5 +15,16 @@
             NameError.textContent = "";
         else
             NameError.textContent = "Name is Incorrect!";
+    });
+}
+{
+    const email = document.querySelector('#email');
+    const emailError = document.querySelector('.email-error');
+    email.addEventListener('input', function () {
+        let emailRegex = RegExp('[\\w+_-]+(?:\\.[\\w_-]+)*@(?:[\\w]+\\.){1,2}[a-zA-Z]{2,}');
+        if (emailRegex.test(email.value))
+            emailError.textContent = "";
+        else
+            emailError.textContent = "Email is Incorrect!";
     });
 }
