@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic input types</title>
+    <link rel="stylesheet" href="../css/simple-form.css">
+</head>
+
+<body>
+    <form>
+        <header class="headerContainer">
+            <h1>HTML 5 Form Input Fields</h1>
+        </header>
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+            <error-output class="text-error" for="name"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Password: </label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="url">url: </label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <label for="number">Number: </label>
+            <input type="number" id="number" name="number">
+        </div>
+        <div>
+            <label for="tel">Telephone Number: </label>
+            <input type="tel" id="tel" name="tel">
+        </div>
+        <div>
+            <label for="search">Search: </label>
+            <input type="search" id="search" name="search">
+        </div>
+        <div>
+            <label for="party">Choose Date and Time: </label>
+            <input type="datetime-local" id="dateTime" name="dateTime">
+        </div>
+        <div>
+            <label for="salary">Choose your Salary: </label>
+            <input type="range" id="salary" name="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    <script src="../js/simple-form.js"></script>
+</body>
+
+</html>
