@@ -28,3 +28,15 @@
             emailError.textContent = "Email is Incorrect!";
     });
 }
+
+{
+    const tel = document.querySelector('#tel');
+    const telError = document.querySelector('.tel-error');
+    tel.addEventListener('input', function () {
+        let phoneRegex = RegExp('^[0-9]{2}[\\s][0-9]{10}$');
+        if (phoneRegex.test(tel.value))
+            telError.textContent = "";
+        else
+            telError.textContent = "Telephone number is Incorrect!";
+    });
+}
