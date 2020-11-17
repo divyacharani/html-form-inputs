@@ -14,7 +14,7 @@
         if (nameRegex.test(name.value))
             NameError.textContent = "";
         else
-            NameError.textContent = "Name is Incorrect!";
+            NameError.textContent = "Name is Invalid!";
     });
 }
 {
@@ -25,7 +25,7 @@
         if (emailRegex.test(email.value))
             emailError.textContent = "";
         else
-            emailError.textContent = "Email is Incorrect!";
+            emailError.textContent = "Email is Invalid!";
     });
 }
 
@@ -37,6 +37,18 @@
         if (phoneRegex.test(tel.value))
             telError.textContent = "";
         else
-            telError.textContent = "Telephone number is Incorrect!";
+            telError.textContent = "Telephone number is Invalid!";
+    });
+}
+
+{
+    const pwd = document.querySelector('#pwd');
+    const pwdError = document.querySelector('.pwd-error');
+    pwd.addEventListener('input', function () {
+        let passwordRegex = RegExp('^[\\w]{8,}$');
+        if (passwordRegex.test(pwd.value))
+        pwdError.textContent = "";
+        else
+        pwdError.textContent = "Password is Invalid!";
     });
 }
