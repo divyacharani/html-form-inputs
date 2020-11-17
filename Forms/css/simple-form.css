@@ -45,3 +45,13 @@ error-output{
     font-style: italic;
     color: red;
 }
+@media  (max-width: 360px){
+   .headerContainer{
+       background-color: green;
+   }
+}
+@media (min-width: 361px) and (max-width: 1000px){
+    .headerContainer{
+        background-color: tomato;
+    }
+}
